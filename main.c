@@ -10,6 +10,10 @@ int main (void) {
     HugeFloat* substraction = substractHugeFloat (op1, op2);
     HugeFloat* multiplication = multiplyHugeFloat (op1, op2);
     HugeInt* division = divideHugeInt (op1->significand, op2->significand);
+	HugeUnsignedInt* hugeNumber = createHugeUnsignedIntFromString ("123456789012345678901234567890");
+    printHugeUnsignedInt (hugeNumber);
+    hugeNumber = createHugeUnsignedIntFromString ("0000000123456789012345678901234567890");
+    printHugeUnsignedInt (hugeNumber);
 
     printHugeFloat (op1);
     printHugeFloat (op2);
